@@ -45,7 +45,7 @@ Figure 2 is an example of a structure in which two improvements a and b are targ
 
 [CBAM](https://arxiv.org/pdf/1807.06521.pdf) was added as the attention module (Figure 2a). The CBAM module's **spatial attention map** plays a role in giving the final output map a weight of **0-1** according to the pixel importance while passing through the ```sigmoid``` function, which is expected to strengthen object information in the image.   
 
-In order to extract the background class and the class to be detected with different weight sets, a ```1x1 conv``` layer was added to obtain each feature map.   
+In order to extract the background class and the class to be segmented with different weight sets, a ```1x1 conv``` layer was added to obtain each feature map.   
 
 Additionally, the output value was adjusted with the activation function ```f''``` to derive an output value close to both extremes. The functions used at this time were compared and experimented with ```none```, ```tanh```, ```ReLU```, ```LeakyReLU```, ```SeLU```, and ```GeLU```, which can output up to negative numbers.    
 
