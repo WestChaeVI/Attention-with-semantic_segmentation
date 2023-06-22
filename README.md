@@ -57,7 +57,7 @@ Additionally, the output value was adjusted with the activation function ```f''`
 |Dataset|Train set|Valid set|Test set|
 |:---:|:---:|:---:|:---:|
 |[K-Vasir](https://paperswithcode.com/dataset/kvasir)|600|200|200|
-|[Ottawa](https://ieeexplore.ieee.org/document/8506600)|558|181|185|      
+|[ISIC](https://challenge.isic-archive.com/data/#2017)|2000|150|150|      
   
 ## Evaluation   
 
@@ -71,7 +71,7 @@ $$Dice\ CELoss = (1 - Dice\ Score) + Cross\ entropy$$
 
 A. Model of basic structure (top structure in Figure 2)    
 B. Model of basic structure + b (only the output layer structure in Figure 2 changes)    
-C. Model of basic structure + a + b (bottom structure in Figure 2)    
+**C. Model of basic structure + a + b (bottom structure in Figure 2)**    
 D. Modifying module a in the lower structure of Figure 2 (sig & tanh)     
 
 ### Figure 3   
@@ -84,7 +84,7 @@ D. Modifying module a in the lower structure of Figure 2 (sig & tanh)
 <tr>
 <th style="text-align:center">Data Set</th>
 <th colspan='5'>K-Vasir</th>
-<th colspan='5'>Ottawa</th>
+<th colspan='5'>ISIC(2017)</th>
 </tr>
 </thead>
 <tbody>
@@ -108,11 +108,11 @@ D. Modifying module a in the lower structure of Figure 2 (sig & tanh)
 <td style="text-align:center">0.891</td>
 <td style="text-align:center">0.912</td>
 <td style="text-align:center">0.886</td>
-<td style="text-align:center">0.919</td>
-<td style="text-align:center">0.916</td>
-<td style="text-align:center">0.922</td>
-<td style="text-align:center">0.938</td>
-<td style="text-align:center">0.924</td>
+<td style="text-align:center">0.852</td>
+<td style="text-align:center">0.839</td>
+<td style="text-align:center">0.849</td>
+<td style="text-align:center">0.860</td>
+<td style="text-align:center">0.850</td>
 </tr>
 <tr>
 <td style="text-align:center">B</td>
@@ -121,11 +121,11 @@ D. Modifying module a in the lower structure of Figure 2 (sig & tanh)
 <td style="text-align:center">0.896<br>SeLu</td>
 <td style="text-align:center">0.911<br>SeLu</td>
 <td style="text-align:center">0.891</td>
-<td style="text-align:center"><strong>0.922<br>Leaky ReLu</strong></td>
-<td style="text-align:center">0.919<br>None</td>
-<td style="text-align:center"><strong>0.923<br>SeLu</strong></td>
-<td style="text-align:center">0.942<br>Leaky ReLu</td>
-<td style="text-align:center">0.927</td>
+<td style="text-align:center">0.854<br>SeLu</td>
+<td style="text-align:center">0.842<br>Leaky ReLU</td>
+<td style="text-align:center">0.850<br>Tanh</td>
+<td style="text-align:center"><strong>0.862<br>Tanh</strong></td>
+<td style="text-align:center">0.852</td>
 </tr>
 <tr>
 <td style="text-align:center">C</td>
@@ -134,11 +134,11 @@ D. Modifying module a in the lower structure of Figure 2 (sig & tanh)
 <td style="text-align:center"><strong>0.898<br>ReLu</strong></td>
 <td style="text-align:center"><strong>0.919<br>Leaky ReLu</strong></td>
 <td style="text-align:center"><strong>0.897</strong></td>
-<td style="text-align:center">0.921<br>ReLu</td>
-<td style="text-align:center"><strong>0.926<br>SeLu</strong></td>
-<td style="text-align:center"><strong>0.923<br>SeLu, GeLu</strong></td>
-<td style="text-align:center"><strong>0.944<br>SeLu</strong></td>
-<td style="text-align:center"><strong>0.929<br></strong></td>
+<td style="text-align:center"><strong>0.855<br>None</strong></td>
+<td style="text-align:center"><strong>0.853<br>SeLu</strong></td>
+<td style="text-align:center"><strong>0.853<br>GeLu</strong></td>
+<td style="text-align:center"><strong>0.862<br>SeLu</strong></td>
+<td style="text-align:center"><strong>0.856<br></strong></td>
 </tr>
 <tr>
 <td style="text-align:center">D</td>
@@ -147,11 +147,11 @@ D. Modifying module a in the lower structure of Figure 2 (sig & tanh)
 <td style="text-align:center">0.896<br>Leaky ReLu</td>
 <td style="text-align:center">0.915<br>SeLu</td>
 <td style="text-align:center">0.891</td>
-<td style="text-align:center">0.921<br>ReLu</td>
-<td style="text-align:center">0.915<br>SeLu</td>
-<td style="text-align:center">0.917<br>ReLu</td>
-<td style="text-align:center">0.941<br>GeLu</td>
-<td style="text-align:center">0.924</td>
+<td style="text-align:center">0.848<br>GeLu</td>
+<td style="text-align:center">0.848<br>None</td>
+<td style="text-align:center">0.848<br>SeLU, Leaky</td>
+<td style="text-align:center">0.858<br>GeLu</td>
+<td style="text-align:center">0.850</td>
 <td></td>
 </tr>
 </tbody>
