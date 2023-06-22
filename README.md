@@ -15,9 +15,12 @@ Semantic segmentation is a field of deep learning research that classifies backg
 ## **Problems of misclassification in semantic segmentation**   
 When used to distinguish lesions and backgrounds in medical images and divide road and non-road areas in satellite images, input image ```X``` is an R<sup>H×W×C</sup> three-dimensional dataset with ```H × W``` number of pixels and expressed as ```C``` according to scale. When input image ```X``` is input to deep learning algorithm ```F```, **P(F(X)) = [0,1] ∈ R<sup>H×W</sup>** is finally obtained and binary classification is performed through the probability value of each pixel.   
 
-### **Figure 1**    
-<img src="https://user-images.githubusercontent.com/104747868/235346780-85e285b2-43d6-47f3-b19a-b6a2b4034d83.png" width="600" height="300">    
+### **Figure 1**
+![0622201529226761](https://github.com/WestChaeVI/CNN-models/assets/104747868/5b71fb6c-a57d-4209-88bb-f8c5cd975ad9)       
 
++ The difference between the probability distribution of positive and negative classification pixels
+  > The left figure of Figure 1 is a visualization of the distribution (0-1) after obtaining all the inference probabilities of the K-varsir data test set from U-net.    
+  > Looking at the two distributions, it can be seen that the distribution of probability values of the misclassified pixels has many uncertain (close to 0.5).   
 + It is a schematic of the endoscopic (Kvasir-SEG) dataset image to distinguish the segmentation target **Gastrointestinal polyp** from the background and the learning results of ```U-net```, which are widely used in the medical field.   
 + The problem of misclassification commonly observed in the deep learning algorithm was defined in two patterns.   
 **① Pixels that are misclassified due to lack of information (size, texture, etc.) to be segmented**   
