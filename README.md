@@ -1,11 +1,11 @@
 # Attention-based Fine-tuning for Reducing Misclassification in Semantic Segmentation(2023)
 
 
-[Publication](링크)    
+    
 Inho Jeong<sup>o</sup>, $Minyoung Hwang, $Chaejun Seo, Seunghyeok Hong<sup>*</sup>. (2023).   
 Attention-based Fine-tuning for Reducing Misclassification in Semantic Image Segmentation    
-한국정보과학회 학술발표논문집, pp 1862~1864    
-
+[한국정보과학회 학술발표논문집, pp 1862~1864](링크)    
+_This paper within Top 5%_
 
 ------------------------------------------------------------
 
@@ -79,7 +79,7 @@ B. Model of basic structure + b (only the output layer structure in Figure 2 cha
 D. Modifying module a in the lower structure of Figure 2 (sig & tanh)     
 
 ### Figure 3   
-<p align="center"><img src="https://user-images.githubusercontent.com/104747868/235351631-004a47bb-9cc5-4e05-b1f1-573143aa6a9b.png" width="600" height="500"><\   
+<p align="center"><img src="https://user-images.githubusercontent.com/104747868/235351631-004a47bb-9cc5-4e05-b1f1-573143aa6a9b.png" width="600" height="500">   
  
 ### Fine tuning results by model   
 
