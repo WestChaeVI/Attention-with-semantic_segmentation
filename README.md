@@ -156,7 +156,6 @@ D. Modifying module a in the lower structure of Figure 2 (sig & tanh)
 <td style="text-align:center">0.848<br>SeLU, Leaky</td>
 <td style="text-align:center">0.858<br>GeLu</td>
 <td style="text-align:center">0.850</td>
-<td></td>
 </tr>
 </tbody>
 </table>
